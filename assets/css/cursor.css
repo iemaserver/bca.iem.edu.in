@@ -11,14 +11,22 @@
   -moz-transition: opacity 0.3s, color 0.4s;
   transition: opacity 0.3s, color 0.4s;
 }
+
+@media screen and (max-width: 740px) {
+  .cb-cursor {
+    display: none;
+  }
+
+ 
+}
 .cb-cursor:before {
   content: "";
   position: absolute;
-  top: -24px;
-  left: -24px;
+  top: -44px;
+  left: -44px;
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 98px;
+  height: 98px;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -112,11 +120,11 @@
   transition-duration: 0.2s;
 }
 .cb-cursor.-pointer:before {
-  -webkit-transform: scale(0.15);
-  -moz-transform: scale(0.15);
-  -ms-transform: scale(0.15);
-  -o-transform: scale(0.15);
-  transform: scale(0.15);
+  -webkit-transform: scale(0.05);
+  -moz-transform: scale(0.05);
+  -ms-transform: scale(0.05);
+  -o-transform: scale(0.05);
+  transform: scale(0.05);
 }
 .cb-cursor.-text:before {
   opacity: 0.85;

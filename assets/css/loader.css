@@ -1,0 +1,52 @@
+.loaderwrapper {
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    position: fixed;
+  
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+  }
+  .loader img {
+    animation: loading 0.5s ease-in-out;
+    transition-duration: 0.3s !important;
+    position: relative;
+    height: 15vh;
+    width: auto;
+  }
+  .loader {
+    transition-duration: 0.5s;
+    position: relative;
+  
+    height: auto;
+    width: auto;
+  }
+  @keyframes loading {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  html {
+    scrollbar-width: none;
+  }
+  
+  .loadertext {
+    /* background-color: red; */
+    height: auto;
+    width: auto;
+    overflow: hidden;
+  }
+  
+  .loadertext h1 {
+    transform: translateY(60px);
+    transition-duration: 0.5s;
+  }
