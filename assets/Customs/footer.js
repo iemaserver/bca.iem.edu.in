@@ -9,20 +9,21 @@ document.querySelector("footer").innerHTML = ` <div class="footer_widget_area">
           </a>
         </div>
   
-        <ul class="social_links unordered_list">
-          <li>
-            <a href="https://www.facebook.com/iembca/"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCYtrTm4H9aA39wK2DeahpXw"><i class="fab fa-youtube"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIemKolkata"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/school/institute-of-engineering-management-iem/?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-        </ul>
+              <ul class="social_links unordered_list">
+        <li>
+          <a href="https://www.facebook.com/iembca/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCYtrTm4H9aA39wK2DeahpXw" target="_blank"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIemKolkata" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/school/institute-of-engineering-management-iem/?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+      </ul>
+
       </div>
     </div>
     <div class="col col-lg-6">
