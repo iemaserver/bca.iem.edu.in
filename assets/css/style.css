@@ -453,8 +453,9 @@ hr {
 }
 
 .btn_primary {
+  border: 1px solid black;
   color: #1f1d0d;
-  border-color: #f7ff62;
+  /* border-color: #f7ff62; */
   background-color: #f7ff62;
 }
 .btn_primary:hover {
@@ -1891,12 +1892,15 @@ body {
 .hero_banner.style_1 .content_wrap {
   padding: 100px;
   display: flex;
+  border: #000000 2px solid;
   justify-content: center;
   align-items: center;
   height: 80vh;
   background-color: rgb(74 105 83 / 85%);
-  border-radius: 8px;
+  border-radius: 15px;
+
 }
+
 .hero_banner.style_1 .banner_description {
   padding-right: 190px;
 }
