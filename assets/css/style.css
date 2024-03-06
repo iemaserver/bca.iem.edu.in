@@ -1895,7 +1895,7 @@ body {
   border: #000000 2px solid;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: auto;
   background-color: rgb(74 105 83 / 85%);
   border-radius: 15px;
 
@@ -2690,6 +2690,7 @@ body {
 .advertisement_section .images_group .image_wrap {
   overflow: hidden;
   border-radius: 8px;
+  width: fit-content !important;
 }
 .advertisement_section .images_group .image_wrap:not(:last-child) {
   margin-bottom: 30px;
@@ -3270,7 +3271,7 @@ body {
 }
 .main_menu_list > li > a {
   z-index: 1;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 23px;
   color: #1f1d0d;
