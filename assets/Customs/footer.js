@@ -3,7 +3,7 @@ document.querySelector("footer").innerHTML = ` <div class="footer_widget_area">
   <div class="row">
     <div class="col col-lg-3 col-md-6 col-sm-6">
       <div class="footer_widget">
-        <div class="site_logo">
+        <div class="site_logo footimg">
           <a class="site_link" href="index.html">
             <img src="assets/images/logo white  1.png" alt="Collab - Online Learning Platform">
           </a>

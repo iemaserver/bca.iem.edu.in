@@ -1,6 +1,6 @@
 document.querySelector("header").innerHTML = ` <div class="container">
 <div class="row align-items-center">
-  <div class="col col-lg-3 col-5">
+  <div class="col col-lg-3 col-5 headimg">
     <div class="site_logo">
       <a class="site_link dynamic_link" data-link="index.html">
         <img src="assets/images/logo 2.png" alt="Collab - Online Learning Platform">

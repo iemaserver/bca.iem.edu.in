@@ -4810,6 +4810,26 @@ Responsive For Mobile & Tablet Devices
   .site_header {
     padding: 20px 0;
   }
+  .marquee {
+height: 10vh;
+  }
+  .annnouncement {
+    margin-bottom: 0;
+  }
+  .loader img {
+height: 25vh;
+  }
+  .social_links {
+display: flex;
+justify-content: center;
+  }
+  .footimg {
+    display: flex;
+justify-content: center;
+  }
+  .headimg {
+    padding: 0;
+  }
   .main_menu {
     top: 82px;
   }
@@ -4820,7 +4840,12 @@ Responsive For Mobile & Tablet Devices
     padding-top: 82px;
   }
   .hero_banner.style_1 .content_wrap {
-    padding: 80px 20px;
+    padding: 50px 15px;
+    width: 100%;
+  }
+  .herocon {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
   .hero_banner .banner_big_title {
     font-size: 42px;
@@ -4982,19 +5007,21 @@ Responsive For Mobile & Tablet Devices
 }
 .facultysec .facultybanner {
   height: 35vh;
-  background-color: #d2d2d2;
-  width: 80%;
+  background-color: rgb(74 105 83 / 85%);
+  width: 90%;
   display: flex;
+  color: white;
  border-radius: 20px;
   justify-content: center;
   align-items: center;
-  font-size: xx-large;
+  font-size: clamp(5vw, 25px, 25vw);
   font-weight: 500;
+  border: 2px solid black;
 }
 .facultygrid{
 
   /* background-color: #000000; */
-  width:80%;
+  width:90%;
   height:auto;
   displaY:flex;
 
@@ -5011,29 +5038,38 @@ Responsive For Mobile & Tablet Devices
 }
 
 .card {
+
+  display: flex;
   border: 2px solid black;
   border-radius: 13px;
   width: calc(50% - 20px); /* Adjust the width of the card */
   max-width: calc(50% - 20px); /* Adjust the max-width of the card */
   height: auto;
   padding: 23px;
-
+flex-direction: column;
+justify-content: space-between;
   margin-bottom: 20px; /* Add margin-bottom to create space between rows */
 }
 .card::after {
   content: "";
-  background-color: red;
+  background-color: black;
   height: 100% !important;
   width: 100% !important;
 position: absolute;
-z-index: -500;
+z-index: -2;
 left: 12px;
 top: 12px;
 border-radius: 13px;
 }
+.card .photo img {
+  border-radius: 35px;
+  border: 2px solid black;
+}
 
 .card-up{
-  height:10%;
+  
+  min-height: 50px;
+  max-height: 58px;
   width:100%;
   display:flex;
   justify-content: end;
@@ -5043,17 +5079,18 @@ border-radius: 13px;
   text-align: center;
   width:min-content;
   background-color: yellow;
-  height:100%;
+  /* height:100%; */
   width:30%;
 
   display:flex;
   text-align: center;
-
+position: relative;
   justify-content: center;
   border-radius: 13px;
   border: #000000 2px solid;
-  padding: 8px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
+
 .tag h5 {
 font-size: 15px;
 text-align: center;
@@ -5062,10 +5099,11 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 100%;
+
 }
 .card-down{
  
-  height:90%;
+  height:auto;
   width:100%;
 }
 .top{
@@ -5101,3 +5139,58 @@ height: 100%;
   font-size: large;
   font-weight: 500;
 }
+
+
+@media (max-width: 700px) {
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+  }
+  .top{
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+  }
+  
+  .photo{
+    padding:0px !important;
+    width:70%;
+  }
+  .name{
+    margin:10px;
+  }
+  .f-post{
+    font-size: small;
+    font-weight: 400;
+  }
+  .bottom{
+    padding:0px !important;
+  }
+  .facultygrid{
+    width:90%;
+  }
+  .bottom p{
+    padding:0px !important;
+    font-size: small;
+    margin-top: 10px;
+    /* font-weight: 100; */
+  }
+  .tag h5 {
+    font-size: small;
+    width:40%;
+    font-weight: 600;
+  }
+  .tag {
+    width: 100%;
+  }
+  .facultysec .facultybanner {
+    width: 90%;
+    height: 11vh;
+  }
+}
+
