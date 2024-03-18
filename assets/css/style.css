@@ -1831,7 +1831,7 @@ blockquote p {
   color: #f1f1f1;
 }
 .hero_banner .banner_big_title {
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 800;
   line-height: 68px;
   color: #ffffff;
@@ -4128,8 +4128,8 @@ Responsive For Mobile & Tablet Devices
     height: auto;
   }
   .hero_banner .banner_big_title {
-    font-size: 54px;
-    line-height: 58px;
+    font-size: 50px;
+    line-height: 54px;
   }
   .banner_image_1 .satisfied_student {
     left: -150px;
@@ -5079,7 +5079,7 @@ border-radius: 13px;
   max-height: 58px;
   width:100%;
   display:flex;
-  justify-content: end;
+  justify-content: center;
   
 }
 .tag{
@@ -5201,4 +5201,11 @@ height: 100%;
     height: 11vh;
   }
 }
+.black-link{
+  color: black;
+  text-decoration: none;
+}
 
+a:visited {
+  color: black; 
+}
