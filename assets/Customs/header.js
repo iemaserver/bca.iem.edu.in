@@ -12,7 +12,7 @@ document.querySelector("header").innerHTML = ` <div class="container">
       <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
         <ul class="main_menu_list unordered_list_center">
           <li>
-            <a class="nav-link" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+            <a class="nav-link dynamic_link" data-link="index.html" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
            
           </li>
           <li class="dropdown">
@@ -27,7 +27,7 @@ document.querySelector("header").innerHTML = ` <div class="container">
                 
               </li>
               <li>
-                <a class="nav-link" id="courses_details_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dynamic_link" data-link="./faculty.html" id="courses_details_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Faculties
                 </a>
                 
