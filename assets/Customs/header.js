@@ -37,7 +37,7 @@ document.querySelector("header").innerHTML = ` <div class="container">
             </ul>
           </li>
           <li>
-            <a class="nav-link dynamic_link" data-link="./faculty.html" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dynamic_link" data-link="./Faculty.html" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Faculties
             </a>
            
