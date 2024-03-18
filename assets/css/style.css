@@ -3296,6 +3296,13 @@ body {
   font-family: "Roboto", sans-serif;
   border-radius: 8px;
 }
+
+@media screen and (max-width: 1600px) {
+  .main_menu_list > li > a {
+    font-size: 12px;
+  
+  }
+}
 .main_menu_list > li:hover > a,
 .main_menu_list > li.active > a {
   color: #1f1d0d;

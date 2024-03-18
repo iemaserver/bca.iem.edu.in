@@ -27,16 +27,18 @@ document.querySelector("header").innerHTML = ` <div class="container">
                 
               </li>
               <li>
-                <a class="nav-link dynamic_link" data-link="./faculty.html" id="courses_details_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Faculties
-                </a>
-                
-              </li>
+              <a class="nav-link" id="courses_layout_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Research
+              </a>
+              
+            </li>
+              
+              
             </ul>
           </li>
           <li>
-            <a class="nav-link" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Research
+            <a class="nav-link dynamic_link" data-link="./faculty.html" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Faculties
             </a>
            
           </li>
@@ -48,13 +50,13 @@ document.querySelector("header").innerHTML = ` <div class="container">
           </li>
           <li>
             <a class="nav-link" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Events
+              Campus Life
             </a>
            
           </li>
           <li>
             <a class="nav-link" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Gallery
+              Students
             </a>
            
           </li>
@@ -65,6 +67,8 @@ document.querySelector("header").innerHTML = ` <div class="container">
             <ul class="dropdown-menu" aria-labelledby="blog_submenu">
              
               <li><a>Newsletter</a></li>
+              <li><a>Gallery</a></li>
+              <li><a>Innovation and Startup</a></li>
             </ul>
           </li>
          
