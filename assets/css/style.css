@@ -1837,8 +1837,15 @@ blockquote p {
   color: #ffffff;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1477px) {
+  .hero_banner .banner_big_title {
+    font-size: 45px;
+  }
+}
 .hero_banner .banner_description {
   font-size: 16px;
+  text-align: justify;
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 40px;
@@ -1897,7 +1904,7 @@ body {
 }
 
 .hero_banner.style_1 .content_wrap {
-  padding: 100px;
+  padding: 80px;
   display: flex;
   border: #000000 2px solid;
   justify-content: center;
@@ -1912,6 +1919,13 @@ body {
   padding-right: 190px;
 }
 
+
+@media screen and (max-width: 1477px) {
+  .hero_banner .banner_description {
+   font-size: 14px;
+   line-height: 21px;
+  }
+}
 .banner_image_1 {
   z-index: 1;
   position: relative;
@@ -3250,7 +3264,7 @@ body {
   left: 0;
   right: 0;
   z-index: 99;
-  padding: 44px 0;
+  padding: 20px 0;
   position: absolute;
   -webkit-transition: padding 0.3s;
   transition: padding 0.3s;
@@ -3292,9 +3306,24 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 9px 20px 8px;
+
   font-family: "Roboto", sans-serif;
   border-radius: 8px;
+}
+
+
+
+@media screen and (max-width: 1477px) {
+  .main_menu_list > li {
+    margin: 0px;
+  
+  }
+}
+
+@media screen and (max-width: 1449px) {
+  .main_menu_list > li > a {
+    padding: 9px 18px 8px;
+  }
 }
 
 @media screen and (max-width: 1600px) {
@@ -3302,6 +3331,7 @@ body {
     font-size: 12px;
   
   }
+  
 }
 .main_menu_list > li:hover > a,
 .main_menu_list > li.active > a {
@@ -5076,7 +5106,7 @@ border-radius: 13px;
 .card-up{
   
   min-height: 50px;
-  max-height: 58px;
+height: auto;
   width:100%;
   display:flex;
   justify-content: center;
@@ -5208,4 +5238,8 @@ height: 100%;
 
 a:visited {
   color: black; 
+}
+
+.bottom p {
+  text-align:justify !important;
 }
