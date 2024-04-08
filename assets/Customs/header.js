@@ -21,9 +21,9 @@ document.querySelector("header").innerHTML = ` <div class="container">
             </a>
             <ul class="dropdown-menu" aria-labelledby="service_submenu">
               <li>
-                <a class="nav-link" id="courses_layout_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Courses
-                </a>
+              <a class="nav-link dynamic_link" data-link="./Course.html" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+              </a>
                 
               </li>
               <li>

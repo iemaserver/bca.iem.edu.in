@@ -1,0 +1,87 @@
+.Coursesec {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .Coursesec .Coursebanner {
+    height: 35vh;
+    background-color: rgb(74 105 83 / 85%);
+    width: 90%;
+    display: flex;
+    color: white;
+   border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(5vw, 25px, 25vw);
+    font-weight: 500;
+    border: 2px solid black;
+  }
+  
+  .peopso {
+    width: 100vw;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: auto;
+    flex-direction: column;
+  }
+  .peopso .head {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .peopso .peopsowrapper {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .peopso .peopsowrapper .card {
+    gap: 30px;
+    border: #000 2px solid;
+    display: flex;
+    border-radius: 15px;
+    /* background-color: red; */
+    flex-direction: column;
+    padding: 30px 40px 30px 40px;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .peopso .peopsowrapper .card .cardhead {
+    width: 100%;
+    font-size: 40px;
+  }
+  .peopso .peopsowrapper .card .cardcontent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .peopso .peopsowrapper .card .cardcontent ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .peopso .peopsowrapper .card .cardcontent ul li {
+    padding: 20px;
+    background-color: #ddffea;
+    border-radius: 12px;
+  }
+  
