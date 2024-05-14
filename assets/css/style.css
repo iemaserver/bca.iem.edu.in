@@ -3128,10 +3128,13 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  /* background-color: yellow; */
+ 
 }
 .brands_logo_list > li {
   width: 25%;
   padding: 15px;
+  /* background-color: #f7ff62; */
 }
 .brands_logo_list a {
   padding: 30px;
@@ -3147,7 +3150,9 @@ body {
   justify-content: center;
   border: 2px solid transparent;
   border-radius: 8px;
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
+  background-color: #f7ff62;
+
 }
 .brands_logo_list a img {
   max-width: 180px;
@@ -3159,6 +3164,7 @@ body {
   transform: translate(-2px, -2px);
   -webkit-box-shadow: 6px 6px 0 0 #1f1d0d;
   box-shadow: 6px 6px 0 0 #1f1d0d;
+  
 }
 
 .brands_logo_list.style_2 li {
@@ -5654,6 +5660,31 @@ a:visited {
   background-color: rgb(74 105 83 / 85%);
   
 }
+.anualreportwrapper {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+.anualreportwrapper .reporthead {
+font-size: 40px;
+font-weight: 700;
+}
+
+/*  */
+.labsheading,
+  .labclasseshead,
+  .eventhead,
+  .studentchapter .chapterhead,
+  .studentchapter .chapterwrapper .chaptercard .cardhead,.anualreportwrapper .reporthead {
+    font-size: 25px;
+    font-weight: 700;
+  }
 @media only screen and (max-width: 768px) {
   .pdfviewer embed {
     width: 90%; 
