@@ -180,7 +180,7 @@ document.querySelector("footer").innerHTML = ` <div class="footer_widget_area">
 <div class="copyright_widget">
 <div class="container">
   <p class="copyright_text text-center mb-0">
-    <a href="https://themeforest.net/user/merkulove">IEM</a> © <b></b> All rights reserved Copyrights 2024
+    <a href="https://iem.edu.in/">IEM</a> © <b></b> All rights reserved Copyrights 2024
   </p>
 </div>
 </div>`;
