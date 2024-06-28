@@ -337,7 +337,7 @@ hr {
 ================================================== */
 .decoration_wrap {
   z-index: 1;
- 
+
   position: relative;
 }
 .slidewrap {
@@ -1304,6 +1304,7 @@ blockquote p {
 ================================================== */
 .social_links {
   margin: -6px;
+  /* justify-content: center; */
 }
 .social_links > li {
   padding: 6px;
@@ -1880,14 +1881,10 @@ blockquote p {
   max-width: 90vw;
 }
 
-
-
 @media screen and (min-width: 740px) {
   .row-force {
     flex-wrap: nowrap !important;
   }
-
- 
 }
 a {
   cursor: pointer;
@@ -1896,11 +1893,9 @@ a {
   .herodesc {
     width: auto;
   }
-
- 
 }
 body {
-  cursor: url('../images/cursor.png');
+  cursor: url("../images/cursor.png");
 }
 
 .hero_banner.style_1 .content_wrap {
@@ -1912,18 +1907,16 @@ body {
   height: auto;
   background-color: rgb(74 105 83 / 85%);
   border-radius: 15px;
-
 }
 
 .hero_banner.style_1 .banner_description {
   padding-right: 190px;
 }
 
-
 @media screen and (max-width: 1477px) {
   .hero_banner .banner_description {
-   font-size: 14px;
-   line-height: 21px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 .banner_image_1 {
@@ -3129,7 +3122,6 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   /* background-color: yellow; */
- 
 }
 .brands_logo_list > li {
   width: 25%;
@@ -3152,7 +3144,6 @@ body {
   border-radius: 8px;
   /* background-color: #f6f6f6; */
   background-color: #f7ff62;
-
 }
 .brands_logo_list a img {
   max-width: 180px;
@@ -3164,7 +3155,6 @@ body {
   transform: translate(-2px, -2px);
   -webkit-box-shadow: 6px 6px 0 0 #1f1d0d;
   box-shadow: 6px 6px 0 0 #1f1d0d;
-  
 }
 
 .brands_logo_list.style_2 li {
@@ -3317,12 +3307,9 @@ body {
   border-radius: 8px;
 }
 
-
-
 @media screen and (max-width: 1477px) {
   .main_menu_list > li {
     margin: 0px;
-  
   }
 }
 
@@ -3335,9 +3322,7 @@ body {
 @media screen and (max-width: 1600px) {
   .main_menu_list > li > a {
     font-size: 12px;
-  
   }
-  
 }
 .main_menu_list > li:hover > a,
 .main_menu_list > li.active > a {
@@ -3459,7 +3444,16 @@ body {
 }
 .site_footer .site_logo {
   margin-bottom: 35px;
+  /* justify-content: center; */
 }
+.site_logo img {
+  width: auto;
+  height: auto;
+}
+
+/* .site_logo a {
+  width: 700px;
+} */
 .site_footer .footer_widget_area {
   padding: 130px 0 108px;
 }
@@ -4854,21 +4848,21 @@ Responsive For Mobile & Tablet Devices
     padding: 20px 0;
   }
   .marquee {
-height: 10vh;
+    height: 10vh;
   }
   .annnouncement {
     margin-bottom: 0;
   }
   .loader img {
-height: 25vh;
+    height: 25vh;
   }
   .social_links {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
   }
   .footimg {
     display: flex;
-justify-content: center;
+    justify-content: center;
   }
   .headimg {
     padding: 0;
@@ -5038,7 +5032,6 @@ justify-content: center;
 /* Media Screen 320px - End
 ================================================== */
 
-
 .facultysec {
   height: auto;
   width: 100vw;
@@ -5054,20 +5047,18 @@ justify-content: center;
   width: 90%;
   display: flex;
   color: white;
- border-radius: 20px;
+  border-radius: 20px;
   justify-content: center;
   align-items: center;
   font-size: clamp(5vw, 25px, 25vw);
   font-weight: 500;
   border: 2px solid black;
 }
-.facultygrid{
-
+.facultygrid {
   /* background-color: #000000; */
-  width:90%;
-  height:auto;
-  displaY:flex;
-
+  width: 90%;
+  height: auto;
+  display: flex;
 }
 .cards {
   /* background-color: black; */
@@ -5081,7 +5072,6 @@ justify-content: center;
 }
 
 .card {
-
   display: flex;
   border: 2px solid black;
   border-radius: 13px;
@@ -5089,45 +5079,43 @@ justify-content: center;
   max-width: calc(50% - 20px);
   height: auto;
   padding: 23px;
-flex-direction: column;
-justify-content: space-between;
-  margin-bottom: 20px; 
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .card::after {
   content: "";
   background-color: black;
   height: 100% !important;
   width: 100% !important;
-position: absolute;
-z-index: -2;
-left: 12px;
-top: 12px;
-border-radius: 13px;
+  position: absolute;
+  z-index: -2;
+  left: 12px;
+  top: 12px;
+  border-radius: 13px;
 }
 .card .photo img {
   border-radius: 35px;
   border: 2px solid black;
 }
 
-.card-up{
-  
+.card-up {
   min-height: 50px;
-height: auto;
-  width:100%;
-  display:flex;
+  height: auto;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  
 }
-.tag{
+.tag {
   text-align: center;
-  width:min-content;
+  width: min-content;
   background-color: yellow;
   /* height:100%; */
-  width:30%;
+  width: 30%;
 
-  display:flex;
+  display: flex;
   text-align: center;
-position: relative;
+  position: relative;
   justify-content: center;
   border-radius: 13px;
   border: #000000 2px solid;
@@ -5135,50 +5123,45 @@ position: relative;
 }
 
 .tag h5 {
-font-size: 15px;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 100%;
-
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-.card-down{
- 
-  height:auto;
-  width:100%;
+.card-down {
+  height: auto;
+  width: 100%;
 }
-.top{
-  
-  height:45%;
-  width:100%;
-  display:flex;
+.top {
+  height: 45%;
+  width: 100%;
+  display: flex;
 }
-.photo{
-  
-  width:30%;
-  height:100%;
-  padding:10px;
-
+.photo {
+  width: 30%;
+  height: 100%;
+  padding: 10px;
 }
-.name{
-  height:80%;
-  width:60%;
+.name {
+  height: 80%;
+  width: 60%;
   margin: 42px;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
-.f-name{
+.f-name {
   font-size: larger;
   font-weight: 500;
 }
-.f-post{
+.f-post {
   font-size: large;
   font-weight: 300;
 }
-.bottom{
-  padding:10px;
+.bottom {
+  padding: 10px;
   font-size: large;
   font-weight: 500;
 }
@@ -5200,7 +5183,7 @@ height: 100%;
   width: 90%;
   display: flex;
   color: white;
- border-radius: 20px;
+  border-radius: 20px;
   justify-content: center;
   align-items: center;
   font-size: clamp(5vw, 25px, 25vw);
@@ -5261,7 +5244,7 @@ height: 100%;
 
 .peopso .peopsowrapper .P-card .P-cardcontent ul {
   display: flex;
-  width:95%;
+  width: 95%;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
@@ -5273,8 +5256,6 @@ height: 100%;
   border-radius: 12px;
 }
 
-
-
 /* ul {
   list-style-type: none;
 }
@@ -5283,7 +5264,6 @@ height: 100%;
 li {
   text-decoration: none;
 } */
-
 
 @media (max-width: 700px) {
   .cards {
@@ -5294,281 +5274,273 @@ li {
     max-width: 100%;
     gap: 20px;
   }
-  .top{
+  .top {
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap: 20px;
   }
-  
-  .photo{
-    padding:0px !important;
-    width:70%;
+
+  .photo {
+    padding: 0px !important;
+    width: 70%;
   }
-  .name{
-    margin:10px;
+  .name {
+    margin: 10px;
   }
-  .f-post{
+  .f-post {
     font-size: small;
     font-weight: 400;
   }
-  .bottom{
-    padding:0px !important;
+  .bottom {
+    padding: 0px !important;
   }
   .facultygrid {
-    width:90%;
+    width: 90%;
   }
-  .bottom p{
-    padding:0px !important;
+  .bottom p {
+    padding: 0px !important;
     font-size: small;
     margin-top: 10px;
     /* font-weight: 100; */
   }
   .tag h5 {
     font-size: small;
-    width:40%;
+    width: 40%;
     font-weight: 600;
   }
   .tag {
     width: 100%;
-    
   }
   .facultysec .facultybanner {
     width: 90%;
     height: 11vh;
   }
 }
-.black-link{
+.black-link {
   color: black;
   text-decoration: none;
 }
 
 a:visited {
-  color: black; 
+  color: black;
 }
 
 .bottom p {
-  text-align:justify !important;
+  text-align: justify !important;
 }
 
 /* Course Media */
 
 @media screen and (max-width: 1600px) {
-  
-
-
   .header-menu .sub-menu li .sub-menu {
     top: 0px;
     left: -100%;
     opacity: 0;
     visibility: hidden;
   }
-  
+}
+@media screen and (max-width: 425px) {
+  .eventhead {
+    padding-left: 75px;
+    font-size: 35px;
   }
-  @media screen and (max-width:425px){
-    .eventhead{
-      padding-left:75px;
-      font-size: 35px;
-    }
-    .drp_year{
-      margin-right: 15px;
-    }
+  .drp_year {
+    margin-right: 15px;
   }
-  @media screen and (max-width: 678px) {
-    .alumnigrid .P-card .p-carddesc .P-cardnamadd  {
-      font-size: 22px;
-    }
-    .alumnigrid .P-card .P-carddesc .P-cardnamadd p {
-      font-size: 12px;
-    }
-    .alumnigrid .P-card .P-carddesc .P-cardbatch {
-      /* background-color: #19911D; */
-      color: white;
-      width: 30%;
-      text-align: center;
-      padding: 20px;
-      font-size: 10px;
-      border-radius: 12px;
-    }
-    .alumnigrid .P-card .P-carddesc {
-      /* background-color: red; */
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-    .alumnigrid .P-card {
-      height:auto;
-      padding: 30px 30px 30px 30px;
-      border-radius: 15px;
-      gap: 10px;
-      flex-direction: column;
-        /* border: #19911D 1px solid; */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-        width:100%;
-        margin-bottom: 10px; 
-      }
-      .alumnigrid .P-card .cardimg img {
-        border-radius: 12px;
-        width: 100%;
-      }
-    
-    
-    .innovp .content .part1 .tables,.innovp .content .part2 .tables {
-  width: 90%;
-    }
-    .peopso .peopsowrapper .P-card {
-      padding: 25px 20px 25px 20px;
-    }
-  
-    .peopso .peopsowrapper {
-      width: 95%;
-    }
-    .peopso .peopsowrapper .P-card .P-cardhead {
-      font-size: 25px;
-    }
-    
-    .coursesecs .btechcse .csesyllebus .syllebus .syllebuscard .semcontent ul li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-width: 15%;
-      max-width: 25%;
-      padding: 5px;
-      font-size: 12px;
-    }
-    .coursesecs .btechcse .csesyllebus {
-      padding: 30px 20px 30px 20px;
-    }
-    .coursesecs .btechcse {
-      width: 95%;
-      padding: 30px 20px 30px 20px;
-    }
-  
-    .coursesecs .btechcse .csesyllebus .syllebus .syllebuscard {
-      width: 100%;
-      padding: auto;
-    }
-    .aboutcontent {
-      flex-direction: column-reverse;
-      width: 100vw;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-    }
-    .aboutcontent .aboutpara {
-      width: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .aboutpara p {
-      text-align: center;
-      width: 90%;
-      font-size: 1rem;
-    }
-    .abouthead {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .aboutcontent .aboutimg {
-      width: 80%;
-      height: auto;
-    }
-    .vision {
-      font-size: 15px;
-    }
-    .msgcontent {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 90%;
-    }
-    .researchtable .tablehead {
-      padding-top: 50px;
-      font-size: 25px !important;
-    }
-    .researchtable {
-      margin: 50px 0 50px 0;
-    }
-    .researchButton {
-      width: 70vw;
-   
-    }
-    .researchButton ul {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .pdfviewer embed {
-      border-radius: 15px;
-      width: 90%;
-    }
-    .labcards {
-      flex-wrap: wrap;
-    }
-    .labcards .cardwrapper {
-      width: 100%;
-    }
-    .diversonwrapper .diversionsec .diversoncard .cardcontent .contenthead {
-      font-size: 25px;
-      font-weight: 700;
-      padding-bottom: 20px;
-    }
-    .labsheading,
-    .labclasseshead,
-    .eventhead,
-    .studentchapter .chapterhead,
-    .studentchapter .chapterwrapper .chaptercard .cardhead,.anualreportwrapper .reporthead {
-      font-size: 25px;
-      font-weight: 700;
-    }
-    .peopso .head {
-      text-align: center;
-      font-size: 25px;
-      font-weight: 700;
-    }
-    .infrawrapper {
-      display: flex;
-      width: 80%;
-      gap: 20px;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-    .infrawrapper .card {
-      max-width: 100%;
-      min-width: 80%;
-    }
-    .infraclsses .labclasses .labclassesgrid .card {
-      max-width: 100%;
-      min-width: 90%;
-      padding-left: 0;
-      padding-right: 0;
-    }
+}
+@media screen and (max-width: 678px) {
+  .alumnigrid .P-card .p-carddesc .P-cardnamadd {
+    font-size: 22px;
+  }
+  .alumnigrid .P-card .P-carddesc .P-cardnamadd p {
+    font-size: 12px;
+  }
+  .alumnigrid .P-card .P-carddesc .P-cardbatch {
+    /* background-color: #19911D; */
+    color: white;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+    border-radius: 12px;
+  }
+  .alumnigrid .P-card .P-carddesc {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .alumnigrid .P-card {
+    height: auto;
+    padding: 30px 30px 30px 30px;
+    border-radius: 15px;
+    gap: 10px;
+    flex-direction: column;
+    /* border: #19911D 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    
+    width: 100%;
+    margin-bottom: 10px;
   }
-  
-  .email_adj {
-    width: 50% !important;
-    font-size: 18px !important;
+  .alumnigrid .P-card .cardimg img {
+    border-radius: 12px;
+    width: 100%;
   }
 
+  .innovp .content .part1 .tables,
+  .innovp .content .part2 .tables {
+    width: 90%;
+  }
+  .peopso .peopsowrapper .P-card {
+    padding: 25px 20px 25px 20px;
+  }
+
+  .peopso .peopsowrapper {
+    width: 95%;
+  }
+  .peopso .peopsowrapper .P-card .P-cardhead {
+    font-size: 25px;
+  }
+
+  .coursesecs .btechcse .csesyllebus .syllebus .syllebuscard .semcontent ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15%;
+    max-width: 25%;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .coursesecs .btechcse .csesyllebus {
+    padding: 30px 20px 30px 20px;
+  }
+  .coursesecs .btechcse {
+    width: 95%;
+    padding: 30px 20px 30px 20px;
+  }
+
+  .coursesecs .btechcse .csesyllebus .syllebus .syllebuscard {
+    width: 100%;
+    padding: auto;
+  }
+  .aboutcontent {
+    flex-direction: column-reverse;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .aboutcontent .aboutpara {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutpara p {
+    text-align: center;
+    width: 90%;
+    font-size: 1rem;
+  }
+  .abouthead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutcontent .aboutimg {
+    width: 80%;
+    height: auto;
+  }
+  .vision {
+    font-size: 15px;
+  }
+  .msgcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .researchtable .tablehead {
+    padding-top: 50px;
+    font-size: 25px !important;
+  }
+  .researchtable {
+    margin: 50px 0 50px 0;
+  }
+  .researchButton {
+    width: 70vw;
+  }
+  .researchButton ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pdfviewer embed {
+    border-radius: 15px;
+    width: 90%;
+  }
+  .labcards {
+    flex-wrap: wrap;
+  }
+  .labcards .cardwrapper {
+    width: 100%;
+  }
+  .diversonwrapper .diversionsec .diversoncard .cardcontent .contenthead {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+  .labsheading,
+  .labclasseshead,
+  .eventhead,
+  .studentchapter .chapterhead,
+  .studentchapter .chapterwrapper .chaptercard .cardhead,
+  .anualreportwrapper .reporthead {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .peopso .head {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .infrawrapper {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .infrawrapper .card {
+    max-width: 100%;
+    min-width: 80%;
+  }
+  .infraclsses .labclasses .labclassesgrid .card {
+    max-width: 100%;
+    min-width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.email_adj {
+  width: 50% !important;
+  font-size: 18px !important;
+}
 
 /* Course */
 
-.Course_Overview{
-  width:90%;
+.Course_Overview {
+  width: 90%;
   /* border:2px solid black; */
   margin-top: 40px;
-  padding:20px;
+  padding: 20px;
   border-radius: 13px;
 }
 
@@ -5593,13 +5565,11 @@ a:visited {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  
 }
 
 .researchpdfs .researchButton .pdfbutton {
   display: flex;
   gap: 15px;
-  
 }
 
 .pdfviewer {
@@ -5607,7 +5577,6 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .pdfviewer embed {
   width: 100%;
@@ -5616,11 +5585,10 @@ a:visited {
   height: 0;
   border-radius: 15px;
   transition-duration: 0.5s;
-  
 }
 
 .researchpdfs .researchButton .pdfbutton li {
-  display:flex;
+  display: flex;
   justify-content: center;
   border: 2px solid black;
   padding: 15px 20px 15px 20px;
@@ -5632,20 +5600,20 @@ a:visited {
 }
 
 .researchpdfs .researchButton .pdfbutton li:hover {
-  background-color: #f7ff62; 
-   color: black;
+  background-color: #f7ff62;
+  color: black;
 }
 .researchButton {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.pdfbutton  {
-  list-style-type: none; 
+.pdfbutton {
+  list-style-type: none;
 }
 
 .pdfbutton .drp_year[data-pdf] {
-  text-decoration: none; 
+  text-decoration: none;
 }
 .Lists {
   list-style-type: none;
@@ -5655,10 +5623,10 @@ a:visited {
 .Lists li {
   text-decoration: none;
 }
-.drp_year, .drp_year:visited {
+.drp_year,
+.drp_year:visited {
   color: inherit;
   background-color: rgb(74 105 83 / 85%);
-  
 }
 .anualreportwrapper {
   height: auto;
@@ -5672,25 +5640,24 @@ a:visited {
 }
 
 .anualreportwrapper .reporthead {
-font-size: 40px;
-font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 /*  */
 .labsheading,
-  .labclasseshead,
-  .eventhead,
-  .studentchapter .chapterhead,
-  .studentchapter .chapterwrapper .chaptercard .cardhead,.anualreportwrapper .reporthead {
-    font-size: 25px;
-    font-weight: 700;
-  }
+.labclasseshead,
+.eventhead,
+.studentchapter .chapterhead,
+.studentchapter .chapterwrapper .chaptercard .cardhead,
+.anualreportwrapper .reporthead {
+  font-size: 25px;
+  font-weight: 700;
+}
 @media only screen and (max-width: 768px) {
   .pdfviewer embed {
-    width: 90%; 
+    width: 90%;
   }
 }
 
-
 /**************************************************************************************************************************************************************************/
-

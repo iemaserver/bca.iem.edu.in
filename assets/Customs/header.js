@@ -3,7 +3,7 @@ document.querySelector("header").innerHTML = ` <div class="container">
   <div class="col col-lg-3 col-5 headimg">
     <div class="site_logo">
       <a class="site_link dynamic_link" data-link="index.html">
-        <img src="assets/images/logo 2.png" alt="Collab - Online Learning Platform">
+        <img src="assets/images/logo 2 (1).png" alt="Collab - Online Learning Platform">
       </a>
     </div>
   </div>
@@ -48,12 +48,30 @@ document.querySelector("header").innerHTML = ` <div class="container">
             </a>
            
           </li>
-          <li>
-            <a class="nav-link" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Campus Life
+        <li class="dropdown">
+            <a class="nav-link" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Campus Life
             </a>
-           
+          <ul class="dropdown-menu" aria-labelledby="blog_submenu">
+                <li class="dropdown">
+                  <a class="nav-link" href="#" id="blog_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Clubs
+                  </a>
+                <ul class="dropdown-menu" aria-labelledby="blog_submenu">
+                    <li><a>Binary Catalyst Assembly</a></li>
+                    <li><a>Words of Life</a></li>
+                    <li><a>Smile of IEM</a></li>
+                    <li><a>Chromatica</a></li>
+                  </ul>
+                </li>
+            
+              <li><a>Magazine</a></li>
+              <li><a>Events</a></li>
+              <li><a>Gallery</a></li>
+          </ul>
+            
           </li>
+          
           <li>
             <a class="nav-link" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Students
@@ -65,7 +83,6 @@ document.querySelector("header").innerHTML = ` <div class="container">
              More
             </a>
             <ul class="dropdown-menu" aria-labelledby="blog_submenu">
-             
               <li><a>Newsletter</a></li>
               <li><a>Gallery</a></li>
               <li><a>Innovation and Startup</a></li>
@@ -102,4 +119,4 @@ document.querySelector("header").innerHTML = ` <div class="container">
     </ul>
   </div>
 </div>
-</div>`
+</div>`;
