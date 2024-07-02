@@ -58,10 +58,10 @@ document.querySelector("header").innerHTML = ` <div class="container">
                   Clubs
                   </a>
                 <ul class="dropdown-menu" aria-labelledby="blog_submenu">
-                    <li><a>Binary Catalyst Assembly</a></li>
-                    <li><a>Words of Life</a></li>
-                    <li><a>Smile of IEM</a></li>
-                    <li><a>Chromatica</a></li>
+                    <li><a class="nav-link dynamic_link" data-link="./BinaryCatalyst.html" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Binary Catalyst Assembly</a></li>
+                    <li><a class="nav-link dynamic_link" data-link="./WordsofLife.html" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Words of Life</a></li>
+                    <li><a class="nav-link dynamic_link" data-link="./Smile.html" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Smile of IEM</a></li>
+                    <li><a class="nav-link dynamic_link" data-link="./Chromatica.html" id="pages_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Chromatica</a></li>
                   </ul>
                 </li>
             

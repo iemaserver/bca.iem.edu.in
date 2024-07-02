@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>BCA</title>
+
+    <link rel="shortcut icon" href="assets/images/IEM_logo.png" />
+
+    <!-- Framework - CSS Include -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+
+    <!-- Icon Font - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome.css" />
+
+    <!-- Animation - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+
+    <!-- Cursor - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/cursor.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/loader.css" />
+    <link rel="stylesheet" type="text/css" href="assets/Customs/ribbion.css" />
+
+    <!-- Carousel - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+
+    <!-- Video & Image Popup - CSS Include -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/magnific-popup.css"
+    />
+
+    <!-- Vanilla Calendar - CSS Include -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/vanilla-calendar.min.css"
+    />
+
+    <!-- Custom - CSS Include -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="./assets/Customs/loader.js"></script>
+  </head>
+
+  <body>
+    <div class="loaderwrapper">
+      <div class="loader">
+        <img class="loaderimg" src="./assets/images/IEM_logo.png" alt="" />
+      </div>
+
+      <div class="loadertext">
+        <h1 class="loadertexth1">BCA</h1>
+      </div>
+    </div>
+    <!-- Body Wrap - Start -->
+    <div class="page_wrapper">
+      <!-- Back To Top - Start -->
+      <div class="backtotop">
+        <a href="#" class="scroll">
+          <i class="far fa-arrow-up"></i>
+        </a>
+      </div>
+      <!-- Back To Top - End -->
+
+      <!-- Site Header - Start
+      ================================================== -->
+      <header class="site_header site_header_1">
+        <script src="./assets/Customs/header.js"></script>
+      </header>
+      <!-- Site Header - End
+      ================================================== -->
+
+      <!-- Main Body - Start
+      ================================================== -->
+      <main class="page_content">
+        <section class="facultysec">
+          <div class="facultybanner">Binary Catalyst Assembly</div>
+          <div class="facultygrid">
+            <div class="cards"></div>
+          </div>
+        </section>
+      </main>
+      <!-- Main Body - End
+      ================================================== -->
+
+      <!-- Site Footer - Start
+      ================================================== -->
+      <footer class="site_footer">
+        <script>
+          const data = [
+            {
+              id: 6,
+              name: "Prof. Dr. Goldina Ghosh",
+              designation: "President",
+              dept: "Department Of Computer Application and Sciences, <br>Institute of Engineering & Management Salt Lake, Kolkata, India",
+              desc: "",
+              imgSrc: "./assets/images/FacultyPhoto/GoldinaPhoto.jpg",
+            },
+
+            {
+              id: 11,
+              name: "Prof. Dr. Priyanka Das",
+              designation: "Vice President",
+              dept: "Department Of Computer Application and Sciences, <br> Institute of Engineering & Management Salt Lake, Kolkata, India",
+              desc: "",
+              imgSrc: "./assets/images/FacultyPhoto/photo_priyanka.jpg",
+            },
+            {
+              id: 8,
+              name: "Prof. Dr. Monoj Kumar Muchahari",
+              designation: "Secretary",
+              dept: "Department Of Computer Application and Sciences, <br> Institute of Engineering & Management Salt Lake, Kolkata, India",
+              desc: "",
+              imgSrc: "./assets/images/FacultyPhoto/MMH.jpg",
+            },
+
+            {
+              id: 15,
+              name: "Prof. Supratim Ghosh",
+              designation: "Faculty co-ordinator",
+              dept: "Department Of Computer Application and Sciences, <br> Institute of Engineering & Management Salt Lake, Kolkata, India",
+              desc: "",
+              imgSrc: "./assets/images/FacultyPhoto/SG.jpeg",
+            },
+
+            {
+              id: 15,
+              name: "Prof. Sucheta Chandra",
+              designation: "Faculty co-ordinator",
+              dept: "Department Of Computer Application and Sciences, <br> Institute of Engineering & Management Salt Lake, Kolkata, India",
+              desc: "",
+              imgSrc: "./assets/images/FacultyPhoto/image_Sucheta.jpeg",
+            },
+          ];
+
+          const cards = document.querySelector(".cards");
+          function generateCards(data) {
+            let cardsHTML = "";
+            data.forEach((item, index) => {
+              const cardHTML = `
+          <div class="card">
+      <div class="card-up">
+        <div class="tag">
+         ${item.designation}
+        </div>
+      </div>
+      <div class="card-down">
+        <div class="top">
+          <div class="photo">
+            <img src="${item.imgSrc}">
+          </div>
+          <div class="name">
+            <div class="f-name">
+            <h5>${item.name}</h5>
+          </div>
+          <div class="f-post">
+            <p class="facDesc">${item.dept} </p></div>
+          </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>${item.desc}
+          </p>
+        </div>
+      </div>
+        `;
+              cardsHTML += cardHTML;
+            });
+            return cardsHTML;
+          }
+
+          // Output the generated cards
+
+          cards.innerHTML = generateCards(data);
+        </script>
+        <script src="./assets/Customs/footer.js"></script>
+      </footer>
+      <!-- Site Footer - End
+      ================================================== -->
+    </div>
+    <!-- Body Wrap - End -->
+
+    <!-- Framework - Jquery Include -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-dropdown-ml-hack.js"></script>
+
+    <!-- animation - jquery include -->
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tilt.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+
+    <!-- Carousel - Jquery Include -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Video & Image Popup - Jquery Include -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+
+    <!-- Counter Up - Jquery Include -->
+    <script src="assets/js/waypoint.js"></script>
+    <script src="./assets/Customs/dynamic_routing.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+
+    <!-- Countdown Timer - jquery include -->
+    <script src="assets/js/countdown.js"></script>
+
+    <!-- Vanilla Calendar - Jquery Include -->
+    <script src="assets/js/vanilla-calendar.min.js"></script>
+    <!-- Custom - Jquery Include -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
