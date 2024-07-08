@@ -48,9 +48,37 @@
       href="assets/css/vanilla-calendar.min.css"
     />
 
+    <!-- Splide - CSS Include -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+
     <!-- Custom - CSS Include -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="./assets/Customs/loader.js"></script>
+    <style>
+      .splide__slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 5px solid black;
+        box-shadow: 10px;
+        border-radius: 10px;
+      }
+
+      #image-slider {
+        width: 1500px;
+        height: 100%;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+
+      .splide__list {
+        height: 670px;
+      }
+    </style>
   </head>
 
   <body>
@@ -73,32 +101,62 @@
       </div>
       <!-- Back To Top - End -->
 
-      <!-- Site Header - Start
-      ================================================== -->
+      <!-- Site Header - Start -->
       <header class="site_header site_header_1">
         <script src="./assets/Customs/header.js"></script>
       </header>
-      <!-- Site Header - End
-      ================================================== -->
+      <!-- Site Header - End -->
 
-      <!-- Main Body - Start
-      ================================================== -->
+      <!-- Main Body - Start -->
       <main class="page_content">
         <section class="facultysec">
           <div class="facultybanner">Smile of IEM</div>
+
+          <!-- Image Slider - Start -->
+
+          <section class="hero_banner style_1">
+            <div style="margin-top: 1%; width: auto; height: auto">
+              <div id="image-slider" class="splide">
+                <div class="banner_image_1 decoration_wrap">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img
+                          src="assets/images/club/smile/04-Jul-2024_Smile_Pic1.jpeg"
+                          alt="Image 1"
+                        />
+                      </li>
+                      <li class="splide__slide">
+                        <img
+                          src="assets/images/club/smile/04-Jul-2024_Smile_Pic2.jpeg"
+                          alt="Image 2"
+                        />
+                      </li>
+                      <li class="splide__slide">
+                        <img
+                          src="assets/images/club/smile/04-Jul-2024_Smile_Pic3.jpeg"
+                          alt="Image 3"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Image Slider - End -->
+
           <div class="facultygrid">
             <div class="cards"></div>
           </div>
         </section>
       </main>
-      <!-- Main Body - End
-      ================================================== -->
+      <!-- Main Body - End -->
 
-      <!-- Site Footer - Start
-      ================================================== -->
+      <!-- Site Footer - Start -->
       <footer class="site_footer">
         <script>
-          const data = [   
+          const data = [
             {
               id: 10,
               name: "Prof. Nayantara Mitra",
@@ -107,7 +165,6 @@
               desc: "",
               imgSrc: "./assets/images/FacultyPhoto/NM.jpeg",
             },
-
             {
               id: 1,
               name: "Prof. Ankan Bhowmik",
@@ -116,7 +173,6 @@
               desc: "",
               imgSrc: "./assets/images/FacultyPhoto/Ankan.jpeg",
             },
-
             {
               id: 3,
               name: "Prof. Dr. Biswajit Maity",
@@ -133,8 +189,6 @@
               desc: "",
               imgSrc: "./assets/images/FacultyPhoto/PritiDeb.jpeg",
             },
-            
-
             {
               id: 16,
               name: "Prof. Kaustav Sarkar",
@@ -143,7 +197,6 @@
               desc: "",
               imgSrc: "./assets/images/FacultyPhoto/KS.jpg",
             },
-        
           ];
 
           const cards = document.querySelector(".cards");
@@ -151,45 +204,43 @@
             let cardsHTML = "";
             data.forEach((item, index) => {
               const cardHTML = `
-          <div class="card">
-      <div class="card-up">
-        <div class="tag">
-         ${item.designation}
-        </div>
-      </div>
-      <div class="card-down">
-        <div class="top">
-          <div class="photo">
-            <img src="${item.imgSrc}">
-          </div>
-          <div class="name">
-            <div class="f-name">
-            <h5>${item.name}</h5>
-          </div>
-          <div class="f-post">
-            <p class="facDesc">${item.dept} </p></div>
-          </div>
-          </div>
-        </div>
-        <div class="bottom">
-          <p>${item.desc}
-          </p>
-        </div>
-      </div>
-        `;
+                <div class="card">
+                  <div class="card-up">
+                    <div class="tag">
+                      ${item.designation}
+                    </div>
+                  </div>
+                  <div class="card-down">
+                    <div class="top">
+                      <div class="photo">
+                        <img src="${item.imgSrc}">
+                      </div>
+                      <div class="name">
+                        <div class="f-name">
+                          <h5>${item.name}</h5>
+                        </div>
+                        <div class="f-post">
+                          <p class="facDesc">${item.dept}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <p>${item.desc}</p>
+                    </div>
+                  </div>
+                </div>
+              `;
               cardsHTML += cardHTML;
             });
             return cardsHTML;
           }
 
           // Output the generated cards
-
           cards.innerHTML = generateCards(data);
         </script>
         <script src="./assets/Customs/footer.js"></script>
       </footer>
-      <!-- Site Footer - End
-      ================================================== -->
+      <!-- Site Footer - End -->
     </div>
     <!-- Body Wrap - End -->
 
@@ -222,7 +273,28 @@
 
     <!-- Vanilla Calendar - Jquery Include -->
     <script src="assets/js/vanilla-calendar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <!-- Custom - Jquery Include -->
     <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#image-slider", {
+          type: "loop",
+          perPage: 1,
+          autoplay: true,
+          interval: 3000, // Set the interval between slides in milliseconds
+          pauseOnHover: false,
+          pauseOnFocus: false,
+          breakpoints: {
+            768: {
+              perPage: 1, // Number of slides per page on medium screens
+            },
+            576: {
+              perPage: 1, // Number of slides per page on small screens
+            },
+          },
+        }).mount();
+      });
+    </script>
   </body>
 </html>
